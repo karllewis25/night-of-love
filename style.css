@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #ff4d6d, #ff758f);
+    color: white;
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.yes {
+    background: #ff1744;
+    color: white;
+}
+
+.no {
+    background: white;
+    color: black;
+    position: relative;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.message {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.finalText {
+    max-width: 600px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
