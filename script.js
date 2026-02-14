@@ -14,19 +14,20 @@ function moveButton() {
 function yesClick() {
     const message = document.getElementById("message");
 
-    // Afficher le message
+    // 1️⃣ Afficher la section avant animation
+    message.style.display = "flex";
     message.classList.remove("hidden");
 
-    // Scroll vers le message
+    // 2️⃣ Scroll vers le message
     message.scrollIntoView({ behavior: "smooth" });
 
-    // Animation texte
-    gsap.from("#message", { opacity: 0, scale: 0.8, duration: 1 });
+    // 3️⃣ Animation GSAP
+    gsap.from(message, { opacity: 0, scale: 0.8, duration: 1 });
 
-    // Confettis 🎉
+    // 4️⃣ Confettis 🎉
     confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } });
 
-    // Pluie de cœurs ❤️
+    // 5️⃣ Pluie de cœurs ❤️
     setInterval(() => {
         confetti({
             particleCount: 6,
