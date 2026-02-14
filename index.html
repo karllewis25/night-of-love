@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>night of love</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- GSAP pour animations -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3"></script>
+
+<!-- Confetti -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+
+<section class="hero">
+
+    <h1 class="title">night of love ❤️</h1>
+    <p class="question">THALIA DE KARL, VEUX-TU ÊTRE MA VALENTINE ? 💕</p>
+
+    <div class="buttons">
+        <button class="yes" onclick="yesClick()">OUI 💖</button>
+        <button class="no" onmouseover="moveButton()">NON 😅</button>
+    </div>
+
+</section>
+
+<section class="message hidden" id="message">
+
+    <h2>JE T’AIME THALIA DE KARL 😍❤️</h2>
+
+    <p class="finalText">
+        POURQUOI VOULAIS-TU APPUYER SUR NON ?<br><br>
+        HEUREUSEMENT QUE TU AS APPUYÉ SUR OUI, ET DONC NOUS PASSERONS 
+        UNE MERVEILLEUSE SOIRÉE TOUTES LES DEUX.<br><br>
+        À CE SOIR ❤️
+    </p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
