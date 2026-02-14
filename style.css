@@ -55,16 +55,15 @@ button:hover {
 }
 
 .message {
-    height: 100vh;
-    display: flex;
+    display: flex; /* important pour animation GSAP */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     background: black;
     color: white;
     text-align: center;
     padding: 20px;
-    animation: fadeIn 1.5s ease;
 }
 
 .hidden {
